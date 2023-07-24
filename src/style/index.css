@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Notable&family=Nunito+Sans:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: "Codec Pro", sans-serif;
+  src: url("../assets//fonts/codec-pro.regular.ttf");
+}
+@font-face {
+  font-family: "Notable Regular", sans-serif;
+  src: url("../assets//fonts/Notable-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+p{
+    margin-bottom: 15px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.codecPro {
+  font-family: "Codec Pro", sans-serif;
+}
+.notableRegular {
+    font-family: 'Notable', sans-serif;
+}
+.sourceCodePro {
+  font-family: "Source Code Pro", monospace;
+}
+.fontKaint {
+  font-family: "Kanit", sans-serif;
+}
+.nordekCommunityVoteBg{
+    background-image: url('../assets/images/bg-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 0;
+}
+.readyForNordekBg{
+    background-image: url('../assets/images/ready-for-nordek.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+@media(min-width:1800px){
+    .nordekCommunityVoteBg{
+        padding: 16.5rem 0 !important;
+    }
+    .readyForNordekBg{
+        padding: 15rem 0 !important;
+    }
+}
+
