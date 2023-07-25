@@ -50,10 +50,10 @@ img{
     padding: 5rem 0;
 }
 .readyForNordekBg{
-    background-image: url('../assets/images/ready-for-nordek.png');
+    /* background-image: url('../assets/images/ready-for-nordek.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     padding: 5rem 0;
 }
 
@@ -62,7 +62,7 @@ img{
         padding: 16.5rem 0 !important;
     }
     .readyForNordekBg{
-        padding: 15rem 0 !important;
+        padding: 16rem 0 15rem 0!important;
     }
 }
 
