@@ -31,8 +31,8 @@ const Button = ({
       className={`d-flex sourceCodePro items-center transition-all duration-300 justify-center gap-2 py-3 
       px-3 border border-solid border-2 relative after:content-[""] after:w-full after:h-full ml-[6px] mb-[6px]
        after:absolute after:z-[-1] after:left-[-6px] after:top-[6px] hover:after:left-0 hover:after:top-0 
-       after:bg-white ${classList} ${className} hover:after:transition-all hover:after:transition hover:after:duration-1000 ease-in-out
-      after:transition-all after:transition after:duration-1000 ease-in-out  disabled:bg-disabled`}
+       after:bg-white ${classList} ${className} hover:after:transition-all hover:after:transition hover:after:duration-300 ease-in-out
+      after:transition-all after:transition after:duration-300 ease-in-out  disabled:bg-disabled`}
     >
       {label}
       {children}
