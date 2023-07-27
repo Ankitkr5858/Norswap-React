@@ -1,6 +1,3 @@
-import React from "react";
-import ReadyForVideoBg from "../assets/video/ready_for_nordek.mp4";
-
 const Video = () => {
   return (
     <video
@@ -11,7 +8,7 @@ const Video = () => {
       muted
       loop
     >
-      <source src={ReadyForVideoBg} />
+      <source src="/videos/ready_for_nordek.mp4" />
     </video>
   );
 };
