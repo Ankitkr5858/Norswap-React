@@ -49,11 +49,12 @@ img {
   background-size: cover;
   padding: 5rem 0;
 }
-.background{
-    background: none !important;
+.background {
+  background: none !important;
 }
-.after-none::before , .after-none::after{
-    display: none;
+.after-none::before,
+.after-none::after {
+  display: none;
 }
 .customShadowBgAndRadius {
   border-radius: 24px;
@@ -65,10 +66,10 @@ img {
     -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px
       #151515 inset;
 }
-.shadowIcon{
-    border-radius: 16px;
-background: #3C3C3C;
-box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.10) inset;
+.shadowIcon {
+  border-radius: 16px;
+  background: #3c3c3c;
+  box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -134,11 +135,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 52px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%; */
-  /* transform: translate(-50% , -50%); */
+  gap: 30px;
 }
 .heroFrom {
   width: 398px;
@@ -227,38 +224,12 @@ input[type="number"] {
   border-radius: 130.605px;
   background: #121212;
 }
-.heroToDrop {
-  display: flex;
-  width: 126px;
-  height: 48px;
-  padding: 12px 14px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 100px;
-  background: #121212;
-}
-.heroToNo {
-  position: absolute;
-  left: 42px;
-  bottom: 14px;
-  color: #fff;
-  text-align: right;
-  leading-trim: both;
-  text-edge: cap;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 12px; /* 87.5% */
-  text-transform: uppercase;
-}
+
 .heroHeaderSwap {
   color: #fff;
   text-align: center;
   font-family: Notable;
-  font-size: 76px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 62.5px; /* 82.237% */
@@ -271,14 +242,7 @@ input[type="number"] {
   font-weight: 400;
   line-height: 62.5px;
 }
-.heroHeaderNor {
-  color: #fff;
-  font-family: Nunito Sans;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 62.5px;
-}
+
 .heroToText {
   color: #858585;
   leading-trim: both;
@@ -289,17 +253,7 @@ input[type="number"] {
   font-weight: 500;
   line-height: 24px; /* 150% */
 }
-.heroFromText {
-  color: #858585;
-  leading-trim: both;
-  text-edge: cap;
-  font-family: Nunito;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  text-transform: uppercase;
-}
+
 .heroEditText {
   color: #949494;
   font-family: Montserrat;
@@ -308,25 +262,7 @@ input[type="number"] {
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
-.heroEdit {
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  text-decoration-line: underline;
-}
-.heroBtn {
-  display: flex;
-  padding: 16px 18px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: 2px solid #fff;
-  background: #000;
-  box-shadow: -4px 4px 0px 0px #fff;
-}
+
 .navbtnText {
   color: #fff;
   font-family: Source Code Pro;
@@ -352,165 +288,11 @@ input[type="number"] {
   align-items: center;
 }
 .slider {
-  /* min-width: 2528px; */
-  /* height: 100vh; */
   flex-shrink: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 5rem 0;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.59) 0%,
-    rgba(0, 0, 0, 0.59) 100%
-  );
-  overflow: hidden;
-}
-.heroToDropdown {
-  display: inline-flex;
-  height: 55.628px;
-  padding: 14.512px 16.93px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12.093px;
-  flex-shrink: 0;
-  border-radius: 130.605px;
-  background: #121212;
-}
-.heroToDrop {
-  display: flex;
-  width: 126px;
-  height: 48px;
-  padding: 12px 14px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 100px;
-  background: #121212;
-}
-.heroToNo {
-  position: absolute;
-  left: 42px;
-  bottom: 14px;
-  color: #fff;
-  text-align: right;
-  leading-trim: both;
-  text-edge: cap;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 12px; /* 87.5% */
-  text-transform: uppercase;
-}
-.heroHeaderSwap {
-  color: #fff;
-  text-align: center;
-  font-family: Notable;
-  font-size: 76px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 62.5px; /* 82.237% */
-}
-.heroHeaderWith {
-  color: #fff;
-  font-family: Nunito Sans;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 62.5px;
-}
-.heroHeaderNor {
-  color: #fff;
-  font-family: Nunito Sans;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 62.5px;
-}
-.heroToText {
-  color: #858585;
-  leading-trim: both;
-  text-edge: cap;
-  font-family: Nunito;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-}
-.heroFromText {
-  color: #858585;
-  leading-trim: both;
-  text-edge: cap;
-  font-family: Nunito;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  text-transform: uppercase;
-}
-.heroEditText {
-  color: #949494;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-.heroEdit {
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  text-decoration-line: underline;
-}
-.heroBtn {
-  display: flex;
-  padding: 16px 18px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: 2px solid #fff;
-  background: #000;
-  box-shadow: -4px 4px 0px 0px #fff;
-}
-.navbtnText {
-  color: #fff;
-  font-family: Source Code Pro;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 100%; /* 14px */
-}
-.navbtn {
-  display: flex;
-  padding: 16px 18px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: 2px solid #fff;
-  background: #000;
-  box-shadow: -4px 4px 0px 0px #fff;
-}
-.navBtn {
-  display: inline-flex;
-  padding: 2px;
-  justify-content: center;
-  align-items: center;
-}
-.slider {
-  /* min-width: 2528px; */
-  /* min-height: 1080px; */
-  /* height: 100vh; */
-  flex-shrink: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.59) 0%,
@@ -519,7 +301,85 @@ input[type="number"] {
   overflow: hidden;
 }
 
+
+.heroToDrop {
+  display: flex;
+  width: 126px;
+  height: 48px;
+  padding: 12px 14px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #121212;
+}
+.heroToNo {
+  position: absolute;
+  left: 42px;
+  bottom: 14px;
+  color: #fff;
+  text-align: right;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 87.5% */
+  text-transform: uppercase;
+}
+
+.heroHeaderNor {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 62.5px;
+}
+
+.heroFromText {
+  color: #858585;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-transform: uppercase;
+}
+
+.heroEdit {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-decoration-line: underline;
+}
+.heroBtn {
+  display: flex;
+  padding: 16px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #fff;
+  background: #000;
+  box-shadow: -4px 4px 0px 0px #fff;
+}
+
+@media (min-width: 1400px) {
+  .heroSection {
+    gap: 50px;
+  }
+}
 @media (min-width: 1800px) {
+  .heroHeaderSwap {
+    font-size: 78px;
+  }
   .nordekCommunityVoteBg {
     padding: 16.5rem 0 !important;
   }
@@ -527,6 +387,6 @@ input[type="number"] {
     padding: 16rem 0 15rem 0 !important;
   }
   .slider {
-    padding: 16.5rem 0 15rem 0 !important;
+    padding: 11.5rem 0 15rem 0 !important;
   }
 }

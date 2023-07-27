@@ -15,7 +15,7 @@ const HeroSection = () => {
           </span>
         </p>
       </div>
-      <div className="w-[814px] h-[148px] flex flex-row items-center justify-start font-nunito">
+      <div className="w-[814px]  h-[90px] 2xl:h-[148px] flex flex-row items-center justify-start font-nunito">
         <div className="relative w-[398px] h-[148px]">
           <div className="heroFrom relative rounded-tl-md rounded-tr-45xl rounded-br-45xl rounded-bl-md [background:linear-gradient(180deg,_#2f2f2f,_#191919)] shadow-[-1.1058107241237905e-15px_-18.05925941467285px_18.06px_#151515_inset,_1.1058107241237905e-15px_18.05925941467285px_18.06px_#323232_inset,_2.163542587612006e-15px_35.33333206176758px_70.67px_rgba(7,_7,_7,_0.56)] w-[398px] h-[148px] ml-[-7px]" />
           <div className="absolute top-[28px] left-[calc(50%_-_130px)] leading-[24px] uppercase font-medium text-gray-200">
@@ -27,14 +27,14 @@ const HeroSection = () => {
                 <img
                   className="relative w-[29.02px] h-[29.02px]"
                   alt=""
-                  src="../../public/images/svg/frame-650.svg"
+                  src="/images/svg/frame-650.svg"
                 />
                 <div className="relative leading-[25.4px] uppercase">NRK</div>
               </div>
               <img
                 className="relative w-[19.35px] h-[19.35px]"
                 alt=""
-                src="../../public/images/svg/down-arrow-icon.svg"
+                src="/images/svg/down-arrow-icon.svg"
               />
             </div>
           </div>
