@@ -22,11 +22,13 @@ const ReadyForNordek = () => {
           <p className="fontKaint text-[30px] font-extrabold mb-[5rem]">
             {Paragraph}
           </p>
+          <div className="flex items-center justify-center">
           <Button
             variant="dark"
             className="min-h-[60px]"
             label="Connect Wallet"
           />
+          </div>
         </div>
       </div>
     </section>

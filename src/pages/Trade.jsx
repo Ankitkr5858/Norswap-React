@@ -6,6 +6,7 @@ import SwapPage from "../components/SwapPage";
 const campaignFitOptions = [
   {
     label: "Swap",
+    link: "/trade"
   },
   {
     label: "Liquidity",
