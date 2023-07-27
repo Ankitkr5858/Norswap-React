@@ -14,6 +14,8 @@ import DropDown2Svg from "../assets/images/svg/DropDown2";
 import Button from "./Button";
 import { fetchCoinData, fetchChartData } from "../utils";
 import Chart from "./Chart";
+import CrossIcon from "./CrossIcon";
+import { faSleigh } from "@fortawesome/free-solid-svg-icons";
 
 const timeRangeOptions = ["24H", "1W", "1M", "1Y"];
 const timeVals = [1, 7, 30, 365];
@@ -27,6 +29,7 @@ const svgComponents = [
 const SwapPage = () => {
   const [activeItem, setActiveItem] = useState(timeRangeOptions[0]);
   const [availableCurrencies, setAvailableCurrencies] = useState([]);
+  const [coinModal, setCoinModal] = useState(false);
   const [chartData, setChartData] = useState([]);
   const [addedPrice, setAddedPrice] = useState(0);
   const [selectedCurrencies, setSelectedCurrencies] = useState({
@@ -168,7 +171,10 @@ const SwapPage = () => {
               ))}
             </ul>
             <div className=" mt-[2rem]">
-              <span className="cursor-pointer">
+              <span
+                onClick={() => setCoinModal(true)}
+                className="cursor-pointer"
+              >
                 <SvgCircle
                   svg={<img src={selectedCurrencies?.from?.image} />}
                   label={selectedCurrencies?.from?.name || ""}
@@ -202,6 +208,7 @@ const SwapPage = () => {
             </div>
             <div className="mt-[2rem]">
               <span
+                onClick={() => setCoinModal(true)}
                 className="inline-flex cursor-pointer items-center transition-all duration-300 justify-center gap-2 
       relative "
               >
@@ -249,6 +256,48 @@ const SwapPage = () => {
         </div>
       </div>
       <Footer />
+      {coinModal && (
+        <div className="coinModal">
+          <div className="text-black">
+            <div className="flex justify-between items-center pb-6 border-b">
+              <span className="font-bold text-[20px]">Select a Token</span>
+              <CrossIcon
+                onClick={() => {
+                  setCoinModal(false);
+                }}
+              />
+            </div>
+            <div className="my-6">
+              <input placeholder="Search name or paste address" type="text" />
+            </div>
+            <div
+              onClick={() => console.log(availableCurrencies)}
+              className="max-h-[300px] overflow-auto pb-8 scroll-0"
+            >
+              {availableCurrencies &&
+                availableCurrencies.map((item) => (
+                  <div
+                    key={item.id}
+                    className="cursor-pointer flex items-center gap-3 hover:bg-[lightgray] py-2 px-1 rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src={item.image}
+                      alt="img"
+                      width="24px"
+                      height="24px"
+                      className="object-cover"
+                    />
+                    <div className="flex flex-col gap-2">
+                      <span className="text-[1rem]">{item.name}</span>
+                      <span className="text-[14px]">{item.name}</span>
+                    </div>
+                  </div>
+                ))}
+            </div>
+            <Button label="Low Risk" className="px-7 !mx-auto !mt-auto" />
+          </div>
+        </div>
+      )}
     </section>
   );
 };

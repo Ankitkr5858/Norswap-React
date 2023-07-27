@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Notable&family=Nunito+Sans:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap");
+
 @font-face {
   font-family: "Codec Pro", sans-serif;
   src: url("../assets//fonts/codec-pro.regular.ttf");
 }
+
 @font-face {
   font-family: "Notable Regular", sans-serif;
   src: url("../assets//fonts/Notable-Regular.ttf");
@@ -13,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -23,25 +26,32 @@ body {
   margin: 0;
   padding: 0;
 }
+
 p {
   margin-bottom: 15px;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .codecPro {
   font-family: "Codec Pro", sans-serif;
 }
+
 .notableRegular {
   font-family: "Notable", sans-serif;
 }
+
 .sourceCodePro {
   font-family: "Source Code Pro", monospace;
 }
+
 .fontKaint {
   font-family: "Kanit", sans-serif;
 }
+
 .nordekCommunityVoteBg {
   background-image: url("../assets/images/bg-img.png");
   background-repeat: no-repeat;
@@ -49,28 +59,30 @@ img {
   background-size: cover;
   padding: 5rem 0;
 }
+
 .background {
   background: none !important;
 }
+
 .after-none::before,
 .after-none::after {
   display: none;
 }
+
 .customShadowBgAndRadius {
   border-radius: 24px;
   background: linear-gradient(180deg, #2f2f2f 0%, #191919 100%);
-  box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px
-      0px rgba(7, 7, 7, 0.56),
-    1.1058107241237905e-15px 18.05925941467285px 18.05925941467285px 0px #323232
-      inset,
-    -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px
-      #151515 inset;
+  box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px 0px rgba(7, 7, 7, 0.56),
+    1.1058107241237905e-15px 18.05925941467285px 18.05925941467285px 0px #323232 inset,
+    -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px #151515 inset;
 }
+
 .shadowIcon {
   border-radius: 16px;
   background: #3c3c3c;
   box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -81,6 +93,7 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
 .readyForNordekBg {
   /* background-image: url('../assets/images/ready-for-nordek.png');
     background-repeat: no-repeat;
@@ -88,6 +101,7 @@ input[type="number"] {
     background-size: cover; */
   padding: 5rem 0;
 }
+
 .navbar {
   display: flex;
   height: 88px;
@@ -100,6 +114,7 @@ input[type="number"] {
   z-index: 99;
   position: relative;
 }
+
 .navbarContainer {
   display: flex;
   width: 1360px;
@@ -108,10 +123,12 @@ input[type="number"] {
   align-items: center;
   background: #141414;
 }
+
 .navbarContent {
   width: 1280px;
   height: 86px;
 }
+
 .navbarLogoSvg {
   display: flex;
   width: 160px;
@@ -120,6 +137,7 @@ input[type="number"] {
   gap: 4px;
   flex-shrink: 0;
 }
+
 .navbarLogoText {
   width: 124.528px;
   height: 20.983px;
@@ -131,24 +149,23 @@ input[type="number"] {
   font-weight: 400;
   line-height: normal;
 }
+
 .heroSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
+
 .heroFrom {
   width: 398px;
   height: 148px;
   flex-shrink: 0;
   border-radius: 64px 6px 6px 64px;
   background: linear-gradient(180deg, #2f2f2f 0%, #191919 100%);
-  box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px
-      0px rgba(7, 7, 7, 0.56),
-    1.1058107241237905e-15px 18.05925941467285px 18.05925941467285px 0px #323232
-      inset,
-    -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px
-      #151515 inset;
+  box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px 0px rgba(7, 7, 7, 0.56),
+    1.1058107241237905e-15px 18.05925941467285px 18.05925941467285px 0px #323232 inset,
+    -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px #151515 inset;
 }
 
 .heroFromDropdown {
@@ -164,6 +181,7 @@ input[type="number"] {
   border-radius: 130.605px;
   background: #121212;
 }
+
 .heroFromDrop {
   display: flex;
   width: 126px;
@@ -176,6 +194,7 @@ input[type="number"] {
   border-radius: 100px;
   background: #121212;
 }
+
 .heroFromNo {
   position: absolute;
   right: 41px;
@@ -189,7 +208,8 @@ input[type="number"] {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 12px; /* 87.5% */
+  line-height: 12px;
+  /* 87.5% */
   text-transform: uppercase;
 }
 
@@ -198,18 +218,16 @@ input[type="number"] {
   height: 33px;
   flex-shrink: 0;
 }
+
 .heroTo {
   width: 398px;
   height: 148px;
   flex-shrink: 0;
   border-radius: 6px 64px 64px 6px;
   background: linear-gradient(180deg, #2f2f2f 0%, #191919 100%);
-  box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px
-      0px rgba(7, 7, 7, 0.56),
-    1.1058107241237905e-15px 18.05925941467285px 18.05925941467285px 0px #323232
-      inset,
-    -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px
-      #151515 inset;
+  box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px 0px rgba(7, 7, 7, 0.56),
+    1.1058107241237905e-15px 18.05925941467285px 18.05925941467285px 0px #323232 inset,
+    -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px #151515 inset;
 }
 
 .heroToDropdown {
@@ -232,8 +250,10 @@ input[type="number"] {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 62.5px; /* 82.237% */
+  line-height: 62.5px;
+  /* 82.237% */
 }
+
 .heroHeaderWith {
   color: #fff;
   font-family: Nunito Sans;
@@ -251,7 +271,8 @@ input[type="number"] {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
 }
 
 .heroEditText {
@@ -260,7 +281,8 @@ input[type="number"] {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
 }
 
 .navbtnText {
@@ -269,8 +291,10 @@ input[type="number"] {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 100%; /* 14px */
+  line-height: 100%;
+  /* 14px */
 }
+
 .navbtn {
   display: flex;
   padding: 16px 18px;
@@ -281,23 +305,23 @@ input[type="number"] {
   background: #000;
   box-shadow: -4px 4px 0px 0px #fff;
 }
+
 .navBtn {
   display: inline-flex;
   padding: 2px;
   justify-content: center;
   align-items: center;
 }
+
 .slider {
   flex-shrink: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 3rem 0;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.59) 0%,
-    rgba(0, 0, 0, 0.59) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.59) 0%,
+      rgba(0, 0, 0, 0.59) 100%);
   overflow: hidden;
 }
 
@@ -314,6 +338,7 @@ input[type="number"] {
   border-radius: 100px;
   background: #121212;
 }
+
 .heroToNo {
   position: absolute;
   left: 42px;
@@ -326,7 +351,8 @@ input[type="number"] {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 12px; /* 87.5% */
+  line-height: 12px;
+  /* 87.5% */
   text-transform: uppercase;
 }
 
@@ -347,7 +373,8 @@ input[type="number"] {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   text-transform: uppercase;
 }
 
@@ -357,9 +384,11 @@ input[type="number"] {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   text-decoration-line: underline;
 }
+
 .heroBtn {
   display: flex;
   padding: 16px 18px;
@@ -376,17 +405,75 @@ input[type="number"] {
     gap: 50px;
   }
 }
+
 @media (min-width: 1800px) {
   .heroHeaderSwap {
     font-size: 78px;
   }
+
   .nordekCommunityVoteBg {
     padding: 16.5rem 0 !important;
   }
+
   .readyForNordekBg {
     padding: 16rem 0 15rem 0 !important;
   }
+
   .slider {
     padding: 11.5rem 0 15rem 0 !important;
   }
+}
+
+.coinModal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: red; */
+  z-index: 20;
+}
+
+.coinModal svg:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.coinModal>div {
+  padding: 24px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 420px !important;
+  overflow: auto;
+  background: white;
+  box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 32px;
+  z-index: 100;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  max-height: 60vh;
+
+}
+
+.coinModal>div input {
+  background-color: transparent;
+  border-radius: 16px;
+  color: rgb(20, 20, 20);
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  outline: 0px;
+  padding: 0px 16px;
+  width: 100%;
+  border: 1px solid rgb(113, 112, 112);
+}
+.scroll-0::-webkit-scrollbar{
+  width: 0;
+  display: none;
+}
+.coinModal>div input:focus {
+  border-color: black;
 }
