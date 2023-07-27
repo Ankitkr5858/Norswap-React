@@ -27,15 +27,23 @@ const SvgCircle = ({
     <div
       {...props}
       onClick={handleClick}
-      className={`inline-flex items-center justify-between  items-center transition-all duration-300 justify-center gap-2 
+      className={`inline-flex    items-center transition-all duration-300 justify-center gap-2 
       relative `}
-    >  
-      <div className={`flex items-center justify-center h-[32px] w-[32px] rounded-full  items-center transition-all duration-300 justify-center gap-2 
+    >
+      <div
+        className={`flex items-center justify-center h-[32px] w-[32px] rounded-full  items-center transition-all duration-300 justify-center gap-2 
       relative 
       
-     ${classList} ${className} `}>{svg}</div>
-       {label && <span className="inline-block fontKaint text-[1rem] font-semibold leading-[1]">{label}</span>}
-       {svg2 && <span className="">{svg2}</span>}
+     ${classList} ${className} `}
+      >
+        {svg}
+      </div>
+      {label && (
+        <span className="inline-block fontKaint text-[1rem] font-semibold leading-[1]">
+          {label}
+        </span>
+      )}
+      {svg2 && <span className="">{svg2}</span>}
     </div>
   );
 };
