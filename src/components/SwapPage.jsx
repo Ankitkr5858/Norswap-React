@@ -165,7 +165,7 @@ const SwapPage = () => {
                 </span>
               </div>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 sticky">
               <Button label="Low Risk" className="w-full" />
             </div>
           </div>

@@ -6,26 +6,26 @@ import SwapPage from "../components/SwapPage";
 const campaignFitOptions = [
   {
     label: "Swap",
-    link: "/trade"
+    href: "/trade",
   },
   {
     label: "Liquidity",
   },
   {
     label: "Perpetual",
-    icon: <LinkSvg key="table-cut-svg" />,
+    icon: <LinkSvg  className="fill-white group-hover:fill-blue-500" key="table-cut-svg" />,
   },
   {
     label: "Bridge",
-    icon: <LinkSvg key="table-cut-svg" />,
+    icon: <LinkSvg className="fill-white group-hover:fill-blue-500" key="table-cut-svg" />,
   },
   {
     label: "Limit (V2)",
-    icon: <LinkSvg key="table-cut-svg" />,
+    icon: <LinkSvg className="fill-white group-hover:fill-blue-500" key="table-cut-svg" />,
   },
   {
     label: "Buy Crypto",
-    icon: <LinkSvg key="table-cut-svg" />,
+    label2: "New",
   },
 ];
 const Trade = () => {
@@ -42,7 +42,7 @@ const Trade = () => {
             <li
               id={option.label}
               key={option.label}
-              className={`fontKaint inline-flex cursor-pointer pb-[6px] gap-2  border-b-4 border-transparent hover:border-b-4 hover:border-blue-500 ${
+              className={`group fontKaint inline-flex cursor-pointer pb-[6px] gap-2  border-b-4 border-transparent hover:border-b-4 hover:border-blue-500 ${
                 activeOption === option.label
                   ? "!border-b-4 !border-blue-500"
                   : ""
