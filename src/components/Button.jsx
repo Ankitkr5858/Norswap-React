@@ -9,6 +9,7 @@ const Button = ({
   children,
   isLoading,
   onClick,
+  svg,
   ...props
 }) => {
   let classList = ``;
@@ -28,7 +29,7 @@ const Button = ({
     <button
       {...props}
       onClick={handleClick}
-      className={`d-flex sourceCodePro items-center transition-all duration-300 justify-center gap-2 py-3 
+      className={`flex sourceCodePro items-center transition-all duration-300 justify-center gap-2 py-3 
       px-3 border border-solid border-2 relative after:content-[""] after:w-full after:h-full ml-[6px] mb-[6px]
        after:absolute after:z-[-1] after:left-[-6px] after:top-[6px] hover:after:left-0 hover:after:top-0 
        after:bg-white ${classList} ${className} hover:after:transition-all hover:after:transition hover:after:duration-300 ease-in-out
@@ -36,6 +37,7 @@ const Button = ({
     >
       {label}
       {children}
+      {svg && <span>{svg}</span>}
       {isLoading && (
         <div className="text-inherit text-[20px] animate-spin flex justify-center items-center">
           <FontAwesomeIcon icon={faSpinner} />

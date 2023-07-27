@@ -5,7 +5,9 @@ const SvgCircle = ({
   variant,
   className,
   onClick,
+  img,
   svg,
+  svg2,
   ...props
 }) => {
   let classList = ``;
@@ -20,19 +22,20 @@ const SvgCircle = ({
       onClick(e);
     }
   }
-
+  const isSVG = typeof svg === "object" && React.isValidElement(svg);
   return (
     <div
       {...props}
       onClick={handleClick}
-      className={`flex items-center justify-between  items-center transition-all duration-300 justify-center gap-2 
+      className={`inline-flex items-center justify-between  items-center transition-all duration-300 justify-center gap-2 
       relative `}
     >  
       <div className={`flex items-center justify-center h-[32px] w-[32px] rounded-full  items-center transition-all duration-300 justify-center gap-2 
       relative 
       
      ${classList} ${className} `}>{svg}</div>
-       {label && <span>{label}</span>}
+       {label && <span className="inline-block fontKaint text-[1rem] font-semibold leading-[1]">{label}</span>}
+       {svg2 && <span className="">{svg2}</span>}
     </div>
   );
 };

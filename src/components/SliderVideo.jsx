@@ -1,11 +1,11 @@
 import React from "react";
-import SliderVideoBg from "../assets/video/slider_for_nordek.mp4";
+// import SliderVideoBg from "../assets/video/slider_for_nordek.mp4";
 
 const SliderVideo = () => {
     return(
         <>
         <div></div>
-        <video
+        {/* <video
             className="absolute top-[-70px] left-0 z-[-1] min-w-full min-h-full"
             height="100%"
             width="100%"
@@ -14,7 +14,7 @@ const SliderVideo = () => {
             loop
         >
             <source src={SliderVideoBg} />
-        </video>
+        </video> */}
         </>
 
     );

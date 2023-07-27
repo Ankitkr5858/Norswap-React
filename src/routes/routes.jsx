@@ -3,6 +3,7 @@ import LazyLoader from "../components/routes/LazyLoader";
 import { lazy } from "react";
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
+const Trade = lazy(() => import("../pages/Trade"));
 const router = createBrowserRouter([
   {
     path: "/",
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <LazyLoader Component={About} />,
+  },
+  {
+    path: "/trade",
+    element: <LazyLoader Component={Trade} />,
   },
   {
     path: "*",

@@ -3,7 +3,6 @@ import Slider from "../components/Slider";
 import NordekCommunityVote from "../components/NordekCommunityVote";
 import ReadyForNordek from "../components/ReadyForNordek";
 import Footer from "../components/Footer.jsx";
-// import SwapPage from "../components/SwapPage";
 
 const Home = () => {
   return (
@@ -13,7 +12,6 @@ const Home = () => {
       <NordekCommunityVote />
       <ReadyForNordek />
       <Footer />
-      {/* <SwapPage/> */}
     </>
   );
 };
