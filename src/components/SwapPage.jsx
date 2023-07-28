@@ -294,7 +294,7 @@ const SwapPage = () => {
                   </div>
                 ))}
             </div>
-            <Button label="Low Risk" className="px-7 !mx-auto !mt-auto" />
+            <Button label="Low Risk" className="px-7 !mx-auto !mt-[1.5rem]" />
           </div>
         </div>
       )}
