@@ -62,14 +62,14 @@ const HeroSection = () => {
                 <img
                   className="relative w-[29.02px] h-[29.02px]"
                   alt=""
-                  src="../../public/images/svg/frame-650.svg"
+                  src={swapIcon}
                 />
                 <div className="relative leading-[25.4px] uppercase">NSWAP</div>
               </div>
               <img
                 className="relative w-[19.35px] h-[19.35px]"
                 alt=""
-                src="../../public/images/svg/down-arrow-icon.svg"
+                src={arrowDown}
               />
             </div>
           </div>
